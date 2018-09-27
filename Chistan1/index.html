@@ -1,0 +1,100 @@
+<!doctype thml>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+   
+	body{
+ padding:0;
+ margin:0; 
+ background-image:url("img/c.gif");
+ overflow:auto;
+ background-repeat:no-repeat;
+ background-size:cover;
+ }
+	#cont{
+	 margin-top:15%;
+	 margin-left: 5%;
+	}
+	 h1{
+	 margin-left:36%;
+	 font-size:60px;
+	 font-style: italic;
+	 text-shadow: 1px 2px 4px #446600;
+	 color:white;
+	 margin-top:-8%;
+	 font-weight:bold;
+	}
+	.va{
+	 color:white;
+	 font-weight:bold;
+	 font-size:30px;
+	 text-align:center;
+	 font-style: italic;
+	  display:block;
+	  text-decoration: none;
+	  text-shadow: 2px 2px 3px white;
+	  padding:1%;
+	  width:20%;
+	  margin-left:35%;
+	  margin-top:2%;
+	  border-radius:50% 10%;
+	  border:none;
+	  background-color:#664400;
+	 }
+	 @media only screen and (max-width: 1024px) {
+	  h1{
+	   font-size:80px;
+	    margin-top:4%;
+		margin-right:8%;
+	  }
+	  .va{
+	   width:30%;
+	  font-weight:bold;
+	 font-size:50px;
+	 text-align:center;
+	 font-style: italic;
+	 margin-top:4%;
+	  }
+	 }
+	 @media only screen and (max-width: 720px) {
+	  h1{
+	   font-size:26px;
+	  }
+	  .va{
+	    font-weight:bold;
+		 border-radius:40% 10%;
+	    font-size:22px;
+	  }
+	  #cont{
+	 margin-top:29%;
+	 margin-left: 5%;
+	}
+	 
+	 }
+   
+   </style>
+  
+  </head>
+  <body>
+   
+  
+   <div id="cont">
+     <h1>چقدر میدانید؟</h1>
+      <a href="secound.html" class="va">در باره بازی</a>
+      <a href="first.html" class="va">شروع بازی</a>
+      <a  href="Desktop" class="va" id="v" onclick="num(this.value)">ختم بازی</a>
+	  <a href="four.html" class="va">در باره ما</a>
+	
+   </div>
+    <script>
+	 function num(c){
+	  document.getElementById("v").innerHTML=c;
+	  alert("آیا میخواهید ازبرنامه خارج شوید؟");
+	  window.close();
+	 }
+	
+	</script>
+  </body>
+
+</html>
